@@ -37,16 +37,16 @@ function App() {
 
 
   return (
-    <App>
+    <>
     <Router>
       <Navbar title="TextUtils" homepage="Home" currMode={mode} toggleMode={toggleMode} currTheme={theme} />
       <div className="container">
         <Routes>
-          <Route exact path="" element={<TextUtills showAlert={showAlert} heading="Enter the text to analyze below" currMode={mode} currTheme={theme} />}></Route>
+          <Route exact path="/" element={<TextUtills showAlert={showAlert} heading="Enter the text to analyze below" currMode={mode} currTheme={theme} />}></Route>
         </Routes>
       </div>
     </Router>
-    </App>
+    </>
   );
 }
 
